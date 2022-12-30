@@ -445,6 +445,7 @@ form div i {
 .failure-icon,
 .error {
   color: red;
+  font-family: "Work Sans";
 }
 
 .success-icon {
