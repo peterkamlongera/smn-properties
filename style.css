@@ -21,7 +21,7 @@ section img {
 
 nav {
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     width: 100%;
     background: #F9F8F8;
     display: flex;
@@ -258,7 +258,7 @@ nav {
 
 .main-heading {
     margin: 0 1.25rem;
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     line-height: 3rem;
     font-family: 'Trirong';
     color: #212738;
@@ -285,19 +285,11 @@ nav {
 .about-info .first {
     border-radius: 50%;
     background-color: #F9F8F8;
-    padding: 2.25rem 1.5rem;
-    margin: 1rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.about-info .second {
-    border-radius: 50%;
-    background-color: #F9F8F8;
     padding: 2.5rem 1.5rem;
     margin: 1rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.25rem;
+    text-align: center;
 }
 
 .info-text {
@@ -338,6 +330,131 @@ nav {
     width: 50%;
 }
 
+.contact-us {
+    max-width: 100%;
+    background-color: #F9F8F8;
+    padding: 5rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.contact-us-container {
+    max-width: 100%
+}
+
+.contact-us-sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+}
+
+.contact-us-primary-container {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.contact-us-heading-wrapper {
+    /* max-width: 570px; */
+    margin-bottom: 3rem;
+}
+
+.contact-us-heading {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-family: "Trirong";
+}
+
+.contact-us-sub-heading {
+    font-size: 1.25rem;
+    color: #212738;
+    line-height: 1.625;
+    margin-bottom: 2.25rem;
+    font-family: "Work Sans";
+    text-align: justify;
+}
+
+.contact-form {
+    background-color: #212738;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.contact-us-form-container-2 {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.contact-us-form {
+    background-color: #F9F8F8;
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.contact-us-input {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border-width: 1px;
+    border-color: #f0f0f0;
+    resize: none;
+    outline: none;
+    font-family: "Work Sans";
+}
+
+.contact-us-label {
+    margin-bottom: 1.5rem;
+}
+
+.contact-us-submit {
+    width: 100%;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #212738;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: #212738;
+    padding: 0.75rem;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    cursor: pointer;
+    font-family: "Work Sans";
+}
+
+.contact-us-submit::hover {
+    opacity: 90%;
+}
+
+form div i {
+    position: relative;
+    padding: 10px;
+  }
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
 
 .contact-footer {
     background-color: #212738;
@@ -403,6 +520,17 @@ nav {
     border-color: #F9F8F8;
 }
 
+form label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+} 
+
+form p {
+    margin: 0 0 20px 0;
+}
+
 
 @media (max-width: 1200px) {
     .main-heading {
@@ -417,7 +545,7 @@ nav {
     }
 
     .about-info .first {
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 1.75rem;
     }
     
@@ -435,6 +563,23 @@ nav {
         font-size: 2.25rem;
         line-height: 2.5rem;
     }
+
+    .contact-us-heading {
+        font-size: 1.5rem;
+    }
+
+    .contact-us-sub-heading {
+        font-size: 1.25rem;
+    }
+
+    .contact-us-input {
+        font-size: 1.125rem;      
+    }
+
+    .contact-us-submit {
+        font-size: 1.125rem;      
+    }
+
     .contact-item-first {
         font-size: 1.875rem;
         line-height: 2.25rem;
@@ -472,7 +617,7 @@ nav {
     }
 
     .about-info .first {
-        font-size: 1.125rem;
+        font-size: 1rem;
         line-height: 1.75rem;
     }
     
@@ -490,6 +635,27 @@ nav {
         font-size: 1.875rem;
         line-height: 2.25rem;
     }
+
+    .contact-us-form-container-2 {
+        width: 100%;
+    }
+
+    .contact-us-heading {
+        font-size: 1.25rem;
+    }
+
+    .contact-us-sub-heading {
+        font-size: 1.125rem;
+    }
+
+    .contact-us-input {
+        font-size: 1rem;      
+    }
+
+    .contact-us-submit {
+        font-size: 1rem;      
+    }
+
     .contact-item-first {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -527,7 +693,7 @@ nav {
     }
 
     .about-info .first {
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 1.25rem;
     }
     
@@ -545,6 +711,27 @@ nav {
         font-size: 1.5rem;
         line-height: 2rem;
     }
+
+    .contact-us-form-container-2 {
+        width: 100%;
+    }
+
+    .contact-us-heading {
+        font-size: 1.125rem;
+    }
+
+    .contact-us-sub-heading {
+        font-size: 1rem;
+    }
+
+    .contact-us-input {
+        font-size: 0.875rem;      
+    }
+
+    .contact-us-submit {
+        font-size: 0.875rem;      
+    }
+
     .contact-item-first {
         font-size: 1.25rem;
         line-height: 1.75rem;
@@ -583,12 +770,7 @@ nav {
     }
 
     .about-info .first {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
-    
-    .about-info .second {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         line-height: 1.25rem;
     }
 
@@ -605,6 +787,22 @@ nav {
     .contact-item-first {
         font-size: 1.125rem;
         line-height: 1.75rem;
+    }
+    
+    .contact-us-heading {
+        font-size: 1.25rem;
+    }
+
+    .contact-us-sub-heading {
+        font-size: 1rem;
+    }
+
+    .contact-us-input {
+        font-size: 0.875rem;      
+    }
+
+    .contact-us-submit {
+        font-size: 0.875rem;      
     }
     
     .contact-item-second {
